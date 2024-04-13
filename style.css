@@ -22,13 +22,19 @@ html, body {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 120px;
     padding-right: 120px;
     background-image: url(images/bg-pattern-top-desktop.svg);
     background-repeat: no-repeat;
+    gap: 60px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .texto {
@@ -36,6 +42,7 @@ main {
     flex-direction: column;
     width: 480px;
     gap: 20px;
+    
 }
 
 h1 {
@@ -47,8 +54,97 @@ h1 {
 .texto > p {
     color: var(--cor3);
     line-height: 1.2em;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 480px;
+}
+
+.avaliacao {
+    display: flex;
+    width: 350px;
+    background-color: #ECE8ED;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.avaliacao#1 {
+    justify-content: flex-start;
+}
+
+.avaliacao#2 {
+    justify-content: center;
+}
+
+.avaliacao#3 {
+    justify-content: flex-end;
+}
+
+.avaliacao > p {
+    color: var(--cor1);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.imagens {
+    margin-right: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+    background-color: var(--cor1);
+    border-radius: 8px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.card > p {
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+}
+
+.identificacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.cabecalho > img {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 14px;
     font-weight: 500;
 }
 
-
+h3 {
+    color: var(--cor2);
+    font-size: 14px;
+    font-weight: normal;
+}
