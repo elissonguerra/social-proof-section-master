@@ -12,24 +12,30 @@
     --cor2: hsl(333, 80%, 67%);
     --cor3: hsl(303, 10%, 53%);
     --cor4: hsl(300, 24%, 96%);
+    --fator: 30px;
 }
 
 html, body {
+    display: flex;
     width: 100%;
     height: 100%;
     font-family: "League Spartan", sans-serif;
+    justify-content: center;
 }
 
 main {
+    width: 1350px;
     display: flex;
     flex-direction: column;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 120px;
     padding-right: 120px;
-    background-image: url(images/bg-pattern-top-desktop.svg);
-    background-repeat: no-repeat;
-    gap: 60px;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size: 530px, 1100px;
+    gap: 80px;
 }
 
 section {
@@ -70,23 +76,26 @@ h1 {
 
 .avaliacao {
     display: flex;
-    width: 350px;
+    width: 100%;
     background-color: #ECE8ED;
     padding: 15px;
     border-radius: 8px;
     align-items: center;
 }
 
-.avaliacao#1 {
-    justify-content: flex-start;
+#um {
+    align-self: start;
+    width:350px;
 }
 
-.avaliacao#2 {
-    justify-content: center;
+#dois {
+    align-self: center;
+    width:350px;
 }
 
-.avaliacao#3 {
-    justify-content: flex-end;
+#tres {
+    align-self: end;
+    width:350px;
 }
 
 .avaliacao > p {
@@ -103,25 +112,32 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 500px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 200px;
+    height: 250px;
     background-color: var(--cor1);
     border-radius: 8px;
-    padding: 20px;
-    gap: 15px;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
 }
 
 .card > p {
     color: white;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
 }
 
 .cabecalho {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .identificacao {
@@ -132,19 +148,19 @@ h1 {
 }
 
 .cabecalho > img {
-    width: 40px;
-    border-radius: 20px;
-    margin-right: 20px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 25px;
 }
 
 h2 {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 h3 {
     color: var(--cor2);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
 }
