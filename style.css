@@ -12,7 +12,6 @@
     --cor2: hsl(333, 80%, 67%);
     --cor3: hsl(303, 10%, 53%);
     --cor4: hsl(300, 24%, 96%);
-    --fator: 30px;
 }
 
 html, body {
@@ -21,6 +20,7 @@ html, body {
     height: 100%;
     font-family: "League Spartan", sans-serif;
     justify-content: center;
+    background-color: #666;
 }
 
 main {
@@ -36,6 +36,7 @@ main {
     background-position: left top, right bottom;
     background-size: 530px, 1100px;
     gap: 80px;
+    background-color: white;
 }
 
 section {
@@ -53,7 +54,7 @@ section {
 
 h1 {
     color: var(--cor1);
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
 }
 
@@ -85,23 +86,23 @@ h1 {
 
 #um {
     align-self: start;
-    width:350px;
+    width:400px;
 }
 
 #dois {
     align-self: center;
-    width:350px;
+    width:400px;
 }
 
 #tres {
     align-self: end;
-    width:350px;
+    width:400px;
 }
 
 .avaliacao > p {
     color: var(--cor1);
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: 800;
+    font-size: 16px;
 }
 
 .imagens {
@@ -113,6 +114,18 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     height: 500px;
+}
+
+#quatro {
+    align-self: start;
+}
+
+#cinco {
+    align-self: center;
+}
+
+#seis {
+    align-self: end;
 }
 
 .card {
@@ -156,7 +169,7 @@ h1 {
 h2 {
     color: white;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h3 {
